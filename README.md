@@ -20,6 +20,15 @@ A partir dos arquivos de testes teste.txt presentes em cada diretório, os segui
 ### Bee 2070 - Contando Sequências Boladas
 ![2070](/Screenshots/2070.png)
 
+### Bee 1932 - Bolsa de Valores
+
+![1932](/Screenshots/1932-teste.png)
+
+![1932](/Screenshots/1932-teste1.png)
+
+![1932](/Screenshots/1932-teste2.png)
+
+
 ## Instalação 
 **Linguagem**: C<br>
 Para a utilização do projeto, deve-se ter acesso ao compilador de linguagem C gcc.
@@ -38,6 +47,7 @@ Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
 Para acessar os enunciados é necessário criar um login na plataforma Beecrowd, os links de cada enunciado estão presentes em:
 
 - [Bee 2070 - Contando Sequências Boladas](https://judge.beecrowd.com/pt/problems/view/2070)
+- [Bee 1932 - Bolsa de valores](https://judge.beecrowd.com/pt/problems/view/1932)
 
 ## Apresentações de resoluções
 Exemplificações em vídeo de aplicações entre os exercicios resolvidos.
