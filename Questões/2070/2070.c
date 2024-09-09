@@ -17,37 +17,6 @@ typedef struct {
     int menor, quantidade;
 } Par;
 
-Par busca_em_largura();
-
-int main() {
-    int i, j, valor;
-    scanf("%d %d %d %d", &k, &tam[0], &tam[1], &tam[2]);
-
-    for (i = 0; i < 3; ++i)
-        for (j = 1; j <= tam[i]; ++j)
-            scanf("%d", &seq[i][j]);
-
-    
-    for (i = 0; i < 3; ++i)
-        for (j = 1; j <= tam[i]; ++j)
-            for (valor = 0; valor <= k; ++valor)
-                prox[i][j][valor] = tam[i] + 1;
-
-    
-    for (i = 0; i < 3; ++i)
-        for (j = 1; j <= tam[i]; ++j)
-            for (valor = j - 1; valor >= 0; --valor) {
-                prox[i][valor][seq[i][j]] = j;
-                if (seq[i][valor] == seq[i][j])
-                    break;
-            }
-
-    Par resposta = busca_em_largura();
-    printf("%d %d\n", resposta.menor, resposta.quantidade);
-
-    return 0;
-}
-
 Par busca_em_largura() {
     int qts = 0;
     int i, inicio, fim;
@@ -99,3 +68,32 @@ Par busca_em_largura() {
 
     return resultado;
 }
+
+int main() {
+    scanf("%d %d %d %d", &k, &tam[0], &tam[1], &tam[2]);
+
+    for (int i = 0; i < 3; ++i)
+        for (int j = 1; j <= tam[i]; ++j)
+            scanf("%d", &seq[i][j]);
+
+    
+    for (int i = 0; i < 3; ++i)
+        for (int j = 1; j <= tam[i]; ++j)
+            for (int valor = 0; valor <= k; ++valor)
+                prox[i][j][valor] = tam[i] + 1;
+
+    
+    for (int i = 0; i < 3; ++i)
+        for (int j = 1; j <= tam[i]; ++j)
+            for (int valor = j - 1; valor >= 0; --valor) {
+                prox[i][valor][seq[i][j]] = j;
+                if (seq[i][valor] == seq[i][j])
+                    break;
+            }
+
+    Par resposta = busca_em_largura();
+    printf("%d %d\n", resposta.menor, resposta.quantidade);
+
+    return 0;
+}
+
