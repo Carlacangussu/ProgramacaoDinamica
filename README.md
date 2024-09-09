@@ -17,6 +17,9 @@ O objetivo do projeto é responder questões disponíveis em juízes online sobr
 ### Resultados dos Problemas em terminal
 A partir dos arquivos de testes teste.txt presentes em cada diretório, os seguintes resultados são apresentados.
 
+### Bee 2070 - Contando Sequências Boladas
+![2070](/Screenshots/2070.png)
+
 ## Instalação 
 **Linguagem**: C<br>
 Para a utilização do projeto, deve-se ter acesso ao compilador de linguagem C gcc.
@@ -33,6 +36,8 @@ Cada questão foi separada em uma pasta diferente e para executar os códigos de
 Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
 
 Para acessar os enunciados é necessário criar um login na plataforma Beecrowd, os links de cada enunciado estão presentes em:
+
+- [Bee 2070 - Contando Sequências Boladas](https://judge.beecrowd.com/pt/problems/view/2070)
 
 ## Apresentações de resoluções
 Exemplificações em vídeo de aplicações entre os exercicios resolvidos.
